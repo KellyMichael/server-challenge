@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
     try{
       var body = JSON.parse(tres.body);
     }catch(e){
-      res.send('ERROR, invalid query');
+      response.send('ERROR, invalid query');
       return
     }
     var first = body[0].distance;
